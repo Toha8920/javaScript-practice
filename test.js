@@ -34,4 +34,15 @@ let part = text.slice(7, 13);
 
 let fruit = "Apple, Banana, Kiwi";
 let fruits = str.substring(7, 13);
-console.log(fruits);
+// console.log(fruits);
+
+
+// JavaScript String toUpperCase()
+let text1 = 'My name is Toha Islam';
+let text2 = text1.toUpperCase();
+// console.log(text2);
+
+// JavaScript String toLowerCase()
+let text3 = "My name is Toha islam";
+let text4 = text1.toLowerCase();
+console.log(text4);
