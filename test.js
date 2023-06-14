@@ -77,4 +77,26 @@ text = "Hello".concat(" ", "World!");
 
 let emni = 'Toha Islam';
 const emni2 = emni.split("");
-console.log(emni2)
+// console.log(emni2)
+
+
+
+// JavaScript String indexOf()
+// The indexOf() method returns the index (position) the first occurrence of a string in a string: and indexOf() case sensitive
+let text8 = "Please locate where 'locate' occurs!";
+let index = text8.indexOf("locate");
+// console.log(index)
+
+
+// JavaScript String match()
+// The match() method returns an array containing the results of matching a string against a string (or a regular expression)
+let text9 = "The rain in SPAIN stays mainly in the plain";
+// console.log(text9.match("ain"))
+
+
+
+// JavaScript String includes()
+// The includes() method returns true if a string contains a specified value.
+// Otherwise it returns false.
+let text10 = "Hello world, welcome to the universe.";
+console.log(text10.includes("world"));
