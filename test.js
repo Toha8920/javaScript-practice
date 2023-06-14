@@ -99,4 +99,13 @@ let text9 = "The rain in SPAIN stays mainly in the plain";
 // The includes() method returns true if a string contains a specified value.
 // Otherwise it returns false.
 let text10 = "Hello world, welcome to the universe.";
-console.log(text10.includes("world"));
+// console.log(text10.includes("world"));
+
+
+
+// Variable Substitutions
+// Template literals allow variables in strings:
+let firstName = "John";
+let lastName = "Doe";
+
+let text11 = `Welcome ${firstName}, ${lastName}!`;
