@@ -107,5 +107,31 @@ let text10 = "Hello world, welcome to the universe.";
 // Template literals allow variables in strings:
 let firstName = "John";
 let lastName = "Doe";
-
 let text11 = `Welcome ${firstName}, ${lastName}!`;
+
+
+// Integer Precision
+// Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+
+// js Number
+// A common mistake is to expect this result to be 30:
+let x = 10;
+let y = 20;
+let z = "The result is: " + x + y;
+console.log(z);
+// actually js runs left to right if js find a string in a line at first it will treat the whole line as a string. Otherwise if js find a number at first of the line it will treat a number data type.
+let xx = 10;
+let yy = 20;
+let zz = x + y + "The result is: ";
+console.log(zz);
+
+
+// In javascript in plus expression string will priority first but in divide or multiply expression number data type will get more priority as much as it can.
+
+
+// NaN is also a number.
+// Infinity is a number: typeof Infinity returns number.
+
+
+// object can not be compare if we compare twice object by == === it will always return false.
+// The difference between == and === is == just check value not type on the other hand === check value and type also.
