@@ -135,3 +135,19 @@ console.log(zz);
 
 // object can not be compare if we compare twice object by == === it will always return false.
 // The difference between == and === is == just check value not type on the other hand === check value and type also.
+
+
+
+
+// toString() Method, toExponential() Method, toFixed() Method, toPrecision() Method all  return a string
+
+
+
+// javaScript Array
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+let length = fruits.length;
+// console.log(length)
+
+// check the last element of an array.
+let lastElement = fruitss[fruitss.length - 1];
+console.log(lastElement);
