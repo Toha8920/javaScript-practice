@@ -118,12 +118,12 @@ let text11 = `Welcome ${firstName}, ${lastName}!`;
 let x = 10;
 let y = 20;
 let z = "The result is: " + x + y;
-console.log(z);
+// console.log(z);
 // actually js runs left to right if js find a string in a line at first it will treat the whole line as a string. Otherwise if js find a number at first of the line it will treat a number data type.
 let xx = 10;
 let yy = 20;
 let zz = x + y + "The result is: ";
-console.log(zz);
+// console.log(zz);
 
 
 // In javascript in plus expression string will priority first but in divide or multiply expression number data type will get more priority as much as it can.
@@ -150,4 +150,36 @@ let length = fruits.length;
 
 // check the last element of an array.
 let lastElement = fruitss[fruitss.length - 1];
-console.log(lastElement);
+// console.log(lastElement);
+
+
+// For loop 
+const fruitsss = ["Banana", "Orange", "Apple", "Mango"];
+
+for (i = 0; i < fruitsss.length; i++) {
+    // console.log(i);
+    // console.log(fruitsss[i])
+}
+
+const fruitssss = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruitssss.length;
+
+let text12 = "<ul>";
+for (let i = 0; i < fLen; i++) {
+    text12 += "<li>" + fruitssss[i] + "</li>";
+}
+text12 += "</ul>";
+// console.log(text12);
+// document.getElementById('onnokichu').innerHTML = text12;
+
+// forEach() method
+function myFunction(value) {
+    // console.log(value);
+}
+fruitssss.forEach(myFunction);
+
+
+// for add something in array use push() method.
+// same thing we can do 
+fruitssss[fruitssss.length] = 'LICHU';
+// console.log(fruitssss);
