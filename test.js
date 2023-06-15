@@ -183,3 +183,67 @@ fruitssss.forEach(myFunction);
 // same thing we can do 
 fruitssss[fruitssss.length] = 'LICHU';
 // console.log(fruitssss);
+
+
+
+// // WARNING !!
+// If you use named indexes, JavaScript will redefine the array to an object.
+// After that, some array methods and properties will produce incorrect results.
+
+
+
+// The Difference Between Arrays and Objects
+// In JavaScript, arrays use numbered indexes.
+// In JavaScript, objects use named indexes.
+
+
+const numbers = [1, 2, 3, 4];
+const persons = { name: 'toha', age: 23 }
+// console.log(typeof numbers);
+// console.log(typeof persons);
+// both will return array but if we have to check then we can use isArray() method
+
+
+
+// The join() method also joins all array elements into a string.
+// It behaves just like toString(), but in addition you can specify the separator:
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits1.toString());
+// console.log(fruits1.join(' * '));
+// pop() method if we want only the last element of an array
+// console.log(fruits1.pop());
+// push () method for use to add something in an array
+
+
+
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+fruits2.splice(2, 0, "Lemon", "Kiwi");
+// console.log(fruits2)
+
+
+
+// The first parameter (2) defines the position where new elements should be added (spliced in).
+// The second parameter (0) defines how many elements should be removed.
+// The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+// The splice() method returns an array with the deleted items:
+
+
+
+// adding to array concat() method
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+// console.log(myChildren)
+
+
+
+// JavaScript Array slice()
+// The slice() method slices out a piece of an array into a new array.
+// This example slices out a part of an array starting from array element 1 ("Orange"):
+const fruits3 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);   //slice(jekhan theke suru hobe, jeikhane jai ses hobe)
+// console.log(citrus);
+
+
+// The slice() method creates a new array.
+// The slice() method does not remove any elements from the main  array.
