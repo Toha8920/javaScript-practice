@@ -247,3 +247,15 @@ const citrus = fruits.slice(1, 3);   //slice(jekhan theke suru hobe, jeikhane ja
 
 // The slice() method creates a new array.
 // The slice() method does not remove any elements from the main  array.
+
+
+// javascript sorting
+const cars = [
+    { type: "Volvo", year: 2016 },
+    { type: "Saab", year: 2001 },
+    { type: "BMW", year: 2010 }
+];
+
+// console.log(cars.sort(function (a, b) {
+//     return (b.year - a.year)
+// }))
