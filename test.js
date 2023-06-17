@@ -257,5 +257,48 @@ const cars = [
 ];
 
 // console.log(cars.sort(function (a, b) {
-//     return (b.year - a.year)
+//     return (a.year - b.year);
+// }));
+
+// console.log(cars.sort(function (a, b) {
+//     return (a.type - b.type)
 // }))
+
+// javaScript forEach() method
+const numbers1 = [40, 50, 60, 10, 30, 20];
+
+function myNumbers(value, index, array) {
+    // console.log(value, index, array);
+}
+
+numbers1.forEach(myNumbers)
+
+
+// javaScript map() method
+function myNumbers2(value, index, array) {
+    return value * 2;
+}
+// console.log(numbers1.map(myNumbers2));
+
+
+// javaScript filter() method
+function myFilters(value, index, array) {
+    return value > 30;
+}
+// console.log(numbers1.filter(myFilters));
+
+
+// javascript reduce() method
+// const numbers1 = [40, 50, 60, 10, 30, 20];
+function myReduce(total, value, index, array) {
+    return total + value;
+}
+// console.log(numbers1.reduce(myReduce, 10));
+
+
+// javascript array every() method 
+function myEvery(value, index, array) {
+    return value > 18;
+}
+let allOver18 = numbers.every(myEvery);
+console.log(allOver18)
