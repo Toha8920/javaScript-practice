@@ -300,5 +300,70 @@ function myReduce(total, value, index, array) {
 function myEvery(value, index, array) {
     return value > 18;
 }
-let allOver18 = numbers.every(myEvery);
-console.log(allOver18)
+let allOver18 = numbers1.every(myEvery);
+// console.log(allOver18)
+
+
+// JavaScript Array some()
+// The some() method checks if some array values pass a test.
+function myFunction(value, index, array) {
+    return value > 18;
+}
+let someOver18 = numbers1.some(myFunction);
+// console.log(someOver18);
+
+
+// js array find() function
+// The find() method returns the value of the first array element that passes a test function.
+let first = numbers1.find(myFunction);
+// console.log(first)
+function myFunction(value, index, array) {
+    return value > 18;
+}
+
+
+// JavaScript Array.from()
+// The Array.from() method returns an Array object from any object with a length property or any iterable object.
+Array.from("ABCDEFG");
+
+
+// An array declared with const has Block Scope.
+// An array declared in a block is not the same as an array declared outside the block:
+const cars2 = ["Saab", "Volvo", "BMW"];
+// Here cars[0] is "Saab"
+{
+    const cars = ["Toyota", "Volvo", "BMW"];
+    // Here cars[0] is "Toyota"
+}
+// Here cars[0] is "Saab"
+
+// An array declared with var does not have block scope
+var cars3 = ["Saab", "Volvo", "BMW"];
+// Here cars[0] is "Saab"
+{
+    var cars3 = ["Toyota", "Volvo", "BMW"];
+    // Here cars[0] is "Toyota"
+}
+// Here cars[0] is "Toyota"
+
+
+
+// javascript date
+// console.log(new Date(2022, 0))
+
+
+// some javascript problem solving
+
+// dava khelar randomly number paowar upay
+// console.log(Math.ceil(Math.random() * 6));
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+// console.log(getRandomNumber(1, 6));
+
+
+// ki vabe amara amader class er sokoler nam alphabetically sajate pari
+const students = ["Summit", "Saad", "Dayan", "Akash"];
+console.log(students.sort())
+
+
