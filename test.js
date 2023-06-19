@@ -400,7 +400,33 @@ function countVowels(sentence) {
     return count;
 }
 
-console.log(countVowels('I love Bangladesh'));
+// console.log(countVowels('I love Bangladesh'));
 // Array.from() method returns an Array object form any object with a length property or any iterable object
+
+
+// kono array theke duplicate number gulo k kivabe ber korte pari
+const numbers2 = [1, 4, 5, 5, 6, 7, 6, 8, 9, 10, 4];
+
+const duplicate = numbers2.filter(function (value, index, array) {
+    return array.indexOf(value) !== index;
+    // return console.log(index)
+});
+console.log(duplicate);
+
+// const filtered = numbers2.filter(function (value, index, array) {
+//     return value > 5;
+// });
+// console.log(filtered);
+
+
+
+// kono array theke unique number gulo k kivabe ber korte pari;
+
+const numbers3 = [1, 4, 5, 5, 6, 7, 6, 8, 9, 10, 4];
+const unique = numbers3.filter(function (value, index, array) {
+    return array.indexOf(value) === index
+});
+console.log(unique)
+
 
 
