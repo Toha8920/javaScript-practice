@@ -364,6 +364,43 @@ function getRandomNumber(min, max) {
 
 // ki vabe amara amader class er sokoler nam alphabetically sajate pari
 const students = ["Summit", "Saad", "Dayan", "Akash"];
-console.log(students.sort())
+// console.log(students.sort()); main array k change kore
+
+
+// class er sokoler roll number cromo onujai sajate pari
+const rollNumbers = [3, 5, 1, 2, 20];
+
+// console.log(rollNumbers.sort(function (a, b) {
+//     return a - b
+// }))
+
+
+// kono ekta sal leap year kina
+function isLeapYear(year) {
+    if ((year % 400 === 0) || year % 4 === 0 && year % 100 !== 0) {
+        console.log(`${year} is a leap year`)
+    }
+    else {
+        console.log(`${year} is not leap year`)
+    }
+}
+// isLeapYear(2028)
+
+
+// kono sentence e koto gula vowel ace ta ber korar niom
+const vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+function countVowels(sentence) {
+    let count = 0;
+    let letters = Array.from(sentence);
+    letters.forEach(function (value, index, array) {
+        if (vowel.includes(value)) {
+            count++
+        }
+    });
+    return count;
+}
+
+console.log(countVowels('I love Bangladesh'));
+// Array.from() method returns an Array object form any object with a length property or any iterable object
 
 
