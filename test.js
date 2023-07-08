@@ -428,5 +428,19 @@ const unique = numbers3.filter(function (value, index, array) {
 });
 console.log(unique)
 
+// javascript falsy value list
+// false.
+// 0 (zero)
+// '' or “” (empty string)
+// null.
+// undefined.
+// NaN.
+
+
+// ternary operator
+let age = 9;
+
+console.log((age > 10) ? "you are adult" : "you are not adult")
+
 
 
