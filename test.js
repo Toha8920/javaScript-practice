@@ -411,7 +411,7 @@ const duplicate = numbers2.filter(function (value, index, array) {
     return array.indexOf(value) !== index;
     // return console.log(index)
 });
-console.log(duplicate);
+// console.log(duplicate);
 
 // const filtered = numbers2.filter(function (value, index, array) {
 //     return value > 5;
@@ -426,7 +426,7 @@ const numbers3 = [1, 4, 5, 5, 6, 7, 6, 8, 9, 10, 4];
 const unique = numbers3.filter(function (value, index, array) {
     return array.indexOf(value) === index
 });
-console.log(unique)
+// console.log(unique);
 
 // javascript falsy value list
 // false.
@@ -440,7 +440,68 @@ console.log(unique)
 // ternary operator
 let age = 9;
 
-console.log((age > 10) ? "you are adult" : "you are not adult")
+// console.log((age > 10) ? "you are adult" : "you are not adult");
+
+// js break continue
+
+// js iterable  note(array and strings are iterable but object are not iterable)
+const name = "W3Schools";
+
+for (const x of name) {
+    // console.log(x);
+};
+
+// The data type of NaN is number
+// The data type of an array is object
+// The data type of a date is object
+// The data type of null is object
+// The data type of an undefined variable is undefined *
+// The data type of a variable that has not been assigned a value is also undefined *
+
+
+
+function isArray1(myArray) {
+    // console.log(myArray.constructor.toString().indexOf('Array') > -1);
+};
+
+isArray1({ name: 'toha' });
+
+function isArray(myArray) {
+    // console.log(myArray.constructor === Array);
+};
+
+isArray([1, 3])
+
+const a = '5';
+const b = +a;
+// console.log(typeof b)
+
+
+// javascript RegularExpression
+// What Is a Regular Expression?
+// A regular expression is a sequence of characters that forms a search pattern.
+
+// When you search for data in a text, you can use this search pattern to describe what you are searching for.
+
+// A regular expression can be a single character, or a more complicated pattern.
+
+// Regular expressions can be used to perform all types of text search and text replace operations.
+
+
+const text13 = 'I love  w3School';
+// console.log(text13.search(/w3school/i))
+
+const pattern = /e/;
+// console.log(pattern.test("The best things in life are free"));
+
+const imtiaz = "I love d5angladesh";
+
+// console.log(imtiaz.search(/[a-z][0-9]angladesh/i));
+
+
+
+
+
 
 
 
