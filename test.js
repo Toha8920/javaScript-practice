@@ -499,7 +499,32 @@ const imtiaz = "I love d5angladesh";
 // console.log(imtiaz.search(/[a-z][0-9]angladesh/i));
 
 
+// javascript error handling
 
+try {
+    addlert('welcome to me')
+}
+catch (err) {
+    console.log(err.name)
+}
+
+// javascript this keyword
+//muloto js er modde this sobdo ti kono object e k denot kore
+
+const person1 = {
+    fullName: function () {
+        return this.firstName + " " + this.lastName
+    }
+};
+
+const person2 = {
+    firstName: 'Toha',
+    lastName: "Islam"
+};
+
+// console.log(person1.fullName.call(person2));
+
+window.addEventListener("load", "hello")
 
 
 
