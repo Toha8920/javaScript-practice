@@ -547,7 +547,7 @@ class Car {
     }
     age() {
         const date = new Date;
-        console.log(date.getFullYear() - this.year)
+        // console.log(date.getFullYear() - this.year)
     }
 }
 
@@ -567,10 +567,41 @@ myCar.age()
 //nicer sentence e summit sobdo ti kotobar bebohar kora hoyce?
 const sentence = "Learn with summit is all about teaching web development skills and techniques in an efficient and  practical manner. If you are just getting started in web development, Learn with summit has all the tolls. lkaf lakjdlfkj summit alkjlkajsdfm. summit";
 
-const matcehs = sentence.match(/summit/gi);
-const occurrence = matcehs ? matcehs.length : 0;
+const matches = sentence.match(/summit/gi);
+const occurrence = matches ? matches.length : 0;
+const position = sentence.match(/Summits/i); //we can use search method
+const positions = position ? `Position found in ${position.index}` : 'No position found';
+// console.log(positions)
+// console.log(occurrence);
 
-console.log(occurrence)
+//input:linearSearch(['a','b','c','d','c'],'c');
+//output:2 or not found
+// problem: linearSearch function ti implement kore dekhan;
+
+function linearSearch(array, value) {
+    let length = array.length
+    for (let i = 0; i < length; i++) {
+        if (array[i] === value) {
+            return i;
+        }
+    };
+    return 'Not found'
+};
+// console.log(linearSearch(['a', 'b', 'c', 'd', 'c'], 'c'));
+
+//kono array theke ki vabe sob theke boro string khuje ber korben ebong tar index number dekhaben
+
+function longestString(names) {
+    let longestWord = '';
+    for (const name of names) {
+        if (name.length > longestWord.length) {
+            longestWord = name;
+        }
+    };
+    return [longestWord, names.indexOf(longestWord)];
+}
+console.log(longestString(['summit saha', 'Learn with summit', 'akash', 'saad', 'Daiyan']));
+
 
 
 
