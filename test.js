@@ -505,7 +505,7 @@ try {
     addlert('welcome to me')
 }
 catch (err) {
-    console.log(err.name)
+    // console.log(err.name)
 }
 
 // javascript this keyword
@@ -524,7 +524,53 @@ const person2 = {
 
 // console.log(person1.fullName.call(person2));
 
-window.addEventListener("load", "hello")
+// window.addEventListener("load", "hello");
+
+// js class 
+class Person {
+    constructor(name, age) {
+        this.name = name,
+            this.age = age
+    }
+    play() {
+        // console.log(`${this.name} is a very good person`)
+    }
+}
+const person3 = new Person('toha', 24); //create actual object 
+const person4 = new Person('Imtiaz', 3)
+person3.play();
+
+class Car {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+    age() {
+        const date = new Date;
+        console.log(date.getFullYear() - this.year)
+    }
+}
+
+const myCar = new Car("Ford", 2014);
+// console.log(myCar)
+myCar.age()
+// document.getElementById("demo").innerHTML =
+//     "My car is " + myCar.age() + " years old.";
+// age() {
+//     const date = new Date();
+//     return date.getFullYear() - this.year;
+//   }
+
+
+
+// Problem solving 2
+//nicer sentence e summit sobdo ti kotobar bebohar kora hoyce?
+const sentence = "Learn with summit is all about teaching web development skills and techniques in an efficient and  practical manner. If you are just getting started in web development, Learn with summit has all the tolls. lkaf lakjdlfkj summit alkjlkajsdfm. summit";
+
+const matcehs = sentence.match(/summit/gi);
+const occurrence = matcehs ? matcehs.length : 0;
+
+console.log(occurrence)
 
 
 
