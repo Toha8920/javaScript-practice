@@ -600,7 +600,86 @@ function longestString(names) {
     };
     return [longestWord, names.indexOf(longestWord)];
 }
-console.log(longestString(['summit saha', 'Learn with summit', 'akash', 'saad', 'Daiyan']));
+// console.log(longestString(['summit saha', 'Learn with summit', 'akash', 'saad', 'Daiyan']));
+
+
+// 1 theke 100 porjonto sokkha gulo 3,5 ebong 3 o 5 dara vibajjo ta ber koro.
+
+function fizBuzz(number) {
+    for (let i = 1; i <= number; i++) {
+        if (i % 15 === 0) {
+            console.log(`${i} is a FizzBuzz`)
+        }
+        else if (i % 3 === 0) {
+            console.log(`${i} is Fizz`)
+        }
+        else if (i % 5 === 0) {
+            console.log(`${i} is Buzz`)
+        }
+        else {
+            console.log(i)
+        }
+    }
+};
+// fizBuzz(100);
+
+// array theke kivabe amara falsy value khuje ber kore bad dite pari
+
+const mixedArr = [
+    "lws",
+    undefined,
+    "learn with summit",
+    false,
+    "",
+    "apple",
+    40,
+    "k",
+    true,
+    "Thanks all",
+    NaN
+];    //false, undefined, "", null, NaN,0;
+
+// const trueArray = mixedArr.filter(function (el) {
+//     if (el) {
+//         return true;
+//     }
+//     else {
+//         return false
+//     }
+// });
+
+const trueArray = mixedArr.filter(Boolean)
+
+// console.log(trueArray)
+
+//object theke falsy value kivabe bad dite pari
+
+const obj = {
+    a: "lws",
+    b: undefined,
+    c: "learn with summit",
+    d: false,
+    e: "",
+    f: "apple",
+    g: 40,
+    h: "k",
+    i: true,
+    j: "Thanks all",
+    k: NaN
+};
+
+function truthyObject(obj) {
+    for (let i in obj) {
+        if (!obj[i]) {
+            delete obj[i]
+        }
+    };
+    return obj;
+};
+console.log(truthyObject(obj));
+// if (!obj[i]) {
+//     delete obj[i]
+// }
 
 
 
