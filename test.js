@@ -676,11 +676,49 @@ function truthyObject(obj) {
     };
     return obj;
 };
-console.log(truthyObject(obj));
+// console.log(truthyObject(obj));
 // if (!obj[i]) {
 //     delete obj[i]
 // }
 
+
+let akash = new String("Bangladesh");
+// console.dir(akash);
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "en",
+    get fullName() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+// console.log(person.fullName)
+
+const person5 = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "",
+    set lang(lang) {
+        this.language = lang;
+    }
+};
+
+
+function temporary() {
+    let counter = 0;
+
+    return function () {
+        counter += 1;
+    }
+};
+
+const add = temporary();
+add();
+console.dir(add)
+add();
+console.dir(add)
 
 
 
