@@ -737,7 +737,7 @@ add();
 
 // js promises
 const paymentSuccess = true;
-const marks = 10;
+const marks = 90;
 
 function enroll() {
     console.log('Course enrollment is in progress');
@@ -785,15 +785,31 @@ function getCertificate() {
     return promise;
 };
 
-enroll()
-    .then(progress)
-    .then(getCertificate)
-    .then(function (value) {
-        console.log(value)
-    })
-    .catch(function (err) {
+// enroll()
+//     .then(progress)
+//     .then(getCertificate)
+//     .then(function (value) {
+//         console.log(value)
+//     })
+//     .catch(function (err) {
+//         console.log(err)
+//     });
+
+
+// async await
+async function course() {
+    try {
+        await enroll();
+        await progress();
+        const message = await getCertificate();
+        console.log(message)
+    }
+    catch (err) {
         console.log(err)
-    })
+    }
+}
+
+course();
 
 
 
