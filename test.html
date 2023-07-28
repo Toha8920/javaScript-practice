@@ -6,13 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./test.js"></script>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: red;
+        }
+    </style>
 </head>
 
 <body>
-    <h2 id="demo">The time is</h2>
-    <button onclick="document.getElementById('demo').innerHTML=Date()">Need to know Time</button>
-    <p id="onnokichu"></p>
+    <!-- <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+    <p class="toha">Toha</p> -->
+
+    <!-- <div id="container">
+        <div id="animate"></div>
+    </div>
+    
+    <button onclick="myMove()">Animate</button> -->
+
+    <div id="toha">
+        <button id="btn">On click</button>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
