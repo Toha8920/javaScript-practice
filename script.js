@@ -39,12 +39,32 @@ function myMove() {
 
 const btn = document.getElementById('btn');
 const toha = document.getElementById('toha');
-console.log(btn, toha)
+// console.log(btn, toha)
 
-btn.addEventListener('click', function () {
-    console.log('Hello btn')
-})
+// btn.addEventListener('click', function () {
+//     console.log('Hello btn')
+// })
 
-toha.addEventListener('click', function () {
-    console.log('Hello div')
-},)
+// toha.addEventListener('click', function () {
+//     console.log('Hello div')
+// },)
+
+// const pera = document.createElement('div');
+// const node = document.createTextNode('')
+
+
+// function myFunction() {
+//     const inpObj = document.getElementById("id1");
+
+//     if (inpObj.validity.rangeUnderflow) {
+//         inpObj.setCustomValidity('You have made range overflow erro')
+//     }
+
+//     if (!inpObj.checkValidity()) {
+//         document.getElementById('demo').innerHTML = inpObj.validationMessage
+//     }
+// }
+
+function myFunction() {
+    window.history.back()
+}
